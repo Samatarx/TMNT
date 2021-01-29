@@ -5,7 +5,7 @@ export default function People({ people, removeNinja, clearAll }) {
   return (
     <main>
       <section className="container">
-        <h1>Teenage Mutant Ninja Turtles</h1>
+        <h1>Teenage Mutant Ninja Turtles: {people.length} </h1>
 
         {people.map((person) => {
           return (
