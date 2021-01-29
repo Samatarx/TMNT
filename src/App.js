@@ -1,28 +1,30 @@
 import React, { useState } from "react";
 import "./App.css";
-import Person from "./Person";
 import data from "./data";
+import People from "./People";
+import Restart from './Restart'
 
 function App() {
   //hook
   const [people, setPeople] = useState(data);
-  return (
-    <main>
-      <section className="container">
-        <h3>Teenage Mutant Ninja Turtles</h3>
 
-        {people.map((person) => {
-          return (
-            <>
-              <Person person={person} age="52" />
-            </>
-          );
-        })}
+  const removeNinja = (id) => {
+    const newList = people.filter((person) => person.id !== id);
+    setPeople(newList);
+  };
 
-        <button onClick={() => setPeople([])}>Splinters coming</button>
-      </section>
-    </main>
-  );
+  const clearAll = () => setPeople([]);
+  const returnAll = () => setPeople(data)
+
+
+  if(people.length === 0){
+    return <div className='restart' >
+      <Restart returnAll={returnAll} />
+    </div>
+  }
+
+  return <People people={people} removeNinja={removeNinja} clearAll={clearAll} />
+   
 }
 
 export default App;

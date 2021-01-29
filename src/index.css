@@ -1,52 +1,73 @@
 * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  position: relative;
+  background-color: white;
+  justify-content: center;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: green;
+  overflow: hidden;
 }
 
 main {
-  display: grid;
-  justify-items: center;
+  height: 80%;
+}
+
+.restart {
+  display: flex;
   align-items: center;
-  height: 100%;
-  width: 100vw;
-  background-color: rgb(169, 224, 169);
+  justify-content: center;
+  width: 400px;
+  height: 70vh;
+  overflow: hidden;
+  margin: 20px;
 }
 
 .container {
-  display: flex;
   position: relative;
+  display: flex;
   flex-direction: column;
-  justify-items: center;
-  background-color: #fff;
+  margin: 20px;
+  height: 100%;
   align-items: center;
-  height: 90vh;
-  width: 500px;
-  margin: 20px 20px;
-  border-radius: 10%;
+  justify-content: center;
+  height: 100%;
+  width: 400px;
+  background-color: #fff;
+  padding: 15px;
+  overflow: hidden;
+}
+/*
+.container button {
+  width: 50px;
+  margin: 10px;
+}
+*/
+
+img {
+  width: 75px;
 }
 
 article {
   display: flex;
-  width: 400px;
-  padding: 20px;
-  margin: 20px;
-  border: #eee 2px solid;
-  border-radius: 30px;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px 10px;
+  width: 100%;
 }
 
-.text {
-  position: relative;
-  margin: 20px;
-
-}
-
-.img {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.btn {
-  position: absolute;
+article .space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  margin: 25px;
 }
