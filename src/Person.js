@@ -21,7 +21,7 @@ export default function Person({ person, removeNinja }) {
           <p>Role: {role}</p>
         </div>
 
-        <button onClick={() => removeNinja(id)}>x</button>
+        <button onClick={() => removeNinja(id)}>X</button>
       </div>
     </article>
   );

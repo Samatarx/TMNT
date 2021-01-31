@@ -68,9 +68,31 @@ article .space {
   margin: 25px;
 }
 
-.restart button {
+.container button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  color: green;
+}
+
+.restart button, .container .clear {
   background-color:#fff;
   color: red;
   padding: 10px;
   margin: 10px;
+}
+
+.restart button, .container .clear:focus {
+  background-color: red;
+  color: white;
+}
+
+.restart button, .container .clear:hover {
+  background-color: red;
+  color: white;
+}
+
+.restart button, .container .clear:visited {
+  background-color: white;
+  color: red;
 }
