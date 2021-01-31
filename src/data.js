@@ -1,6 +1,7 @@
 const data = [
   {
     id: 1,
+    color: "blue",
     name: "Leonardo",
     role: "Leader",
     img:
@@ -8,6 +9,7 @@ const data = [
   },
   {
     id: 2,
+    color: "red",
     name: "Raphael",
     role: "Antihero",
     img:
@@ -15,6 +17,7 @@ const data = [
   },
   {
     id: 3,
+    color: "orange",
     name: "Michelangelo",
     role: "Joker",
     img:
@@ -22,6 +25,7 @@ const data = [
   },
   {
     id: 4,
+    color: "purple",
     name: "Donatello",
     role: "Inventor",
     img:

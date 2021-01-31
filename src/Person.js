@@ -4,7 +4,7 @@ export default function Person({ person, removeNinja }) {
   // const removePerson = () => {
   //     people.filter(person => person.id !== person)
   // }
-  const { id, name, role, img } = person;
+  const { id, name, role, img, color } = person;
 
   // const id = props.person.id
   // const role = props.person.role
@@ -15,10 +15,12 @@ export default function Person({ person, removeNinja }) {
     <article key={id} id={id} classname="person">
       <img src={img} alt="" className="img" />
 
-      <div className ='space' >
+      <div className="space">
         <div className="text">
           <h3>{name}</h3>
-          <p>Role: {role}</p>
+          <p>
+            Role: <span style={{ color: `${color}` }}> {role}</span>
+          </p>
         </div>
 
         <button onClick={() => removeNinja(id)}>X</button>
