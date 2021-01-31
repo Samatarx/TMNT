@@ -18,7 +18,7 @@ export default function People({ people, removeNinja, clearAll }) {
             </>
           );
         })}
-        <button onClick={clearAll} className="cross">
+        <button onClick={clearAll} className="clear">
           Splinters coming
         </button>
       </section>
