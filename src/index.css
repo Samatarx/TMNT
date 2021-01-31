@@ -80,6 +80,7 @@ article .space {
   color: red;
   padding: 10px;
   margin: 10px;
+  border: 2px solid red;
 }
 
 .restart button, .container .clear:focus {
@@ -87,7 +88,13 @@ article .space {
   color: white;
 }
 
-.restart button, .container .clear:hover {
+.restart button:hover {
+  background-color: red;
+  color: white;
+}
+
+
+.container .clear:hover {
   background-color: red;
   color: white;
 }
