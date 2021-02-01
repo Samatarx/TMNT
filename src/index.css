@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: green;
+  overflow-x: hidden ;
 }
 
 main {
@@ -125,5 +126,10 @@ article .space {
   h1 {
     font-size: large;
     padding-bottom:15px;
+  }
+
+  article .space{
+    margin: 5px;
+    padding: 15px;
   }
 }
